@@ -28,6 +28,30 @@ The red spheres above cars represent the (x,y) lidar detection and the purple li
 
 ---
 
+## Performance Evaluation
+
+To evaluate the performance of a Kalman Filter, one can check on the Root Mean Squared Error (RMSE). The figures below shows the RMSE for position (X and Y) and velocity (Vx and Vy). It can be seen that with sensor fusion, one can achieve a lower RMSE which means a better estimation of the vehicle states. Note that the RMSE VY exceeds the threshold for a few instances at the beginning due to initiation error, so it is not a problem.
+
+<p float="left">
+  <img src="images/rmse_x_1.png" width="350"/>
+  <img src="images/rmse_x_2.png" width="350"/>
+</p>
+
+<p float="left">
+  <img src="images/rmse_y_1.png" width="350"/>
+  <img src="images/rmse_y_2.png" width="350"/>
+</p>
+
+<p float="left">
+  <img src="images/rmse_vx_1.png" width="350"/>
+  <img src="images/rmse_vx_2.png" width="350"/>
+</p>
+
+<p float="left">
+  <img src="images/rmse_vy_1.png" width="350"/>
+  <img src="images/rmse_vy_2.png" width="350"/>
+</p>
+
 ## Other Important Dependencies
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
